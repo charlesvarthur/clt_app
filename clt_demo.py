@@ -13,10 +13,12 @@ for i in range(0, 1000):
      list_of_means.append(np.random.choice(binom_dist, 100, replace=True).mean())
 
 
-fig_score_by_course = px.bar(
+fig_list_of_means = px.bar(
     list_of_means,
     x=list_of_means.index,
     y="distrubtion",
     orientation="v",
     template="plotly_dark",
 )
+
+st.plotly_chart(list_of_means)
