@@ -5,7 +5,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
-import plotly_express as px
+import plotly.express as px
 
 binom_dist = np.random.binomial(1, .5, 1000)
 list_of_means = []
