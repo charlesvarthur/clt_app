@@ -6,6 +6,13 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
+st.title('Illustrating Central Limit Theorum with Streamlit')
+st.subheader('An App by Charles Arthur')
+
+st.write(('This app simulates a thousand coin flips using the chance of heads input below,'
+'and then with replacement from that population and plots the historgram of the ' 
+'mean of the samples, in order to illustratge the Central Limit Theorem!'))
+
 #Allows user input to set the probability of each value
 perc_heads = st.number_input(label = ' Chance of a Coin Landing on Heads', min_value = 0.0, max_value = 1.0, value = .5)
 
