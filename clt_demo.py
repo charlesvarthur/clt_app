@@ -34,7 +34,7 @@ ax1 = plt.hist(list_of_means, range=[0,1])
 plt.title(graph_title)
 st.pyplot(fig1)
 
-#Create a second variable to store the the 1's and call the list to be displayed as a bar chart
-fig2, ax2 = plt.subplots()
-ax2 = plt.hist([1,1,1,1])
-st.pyplot(fig2)
+# #Create a second variable to store the the 1's and call the list to be displayed as a bar chart
+# fig2, ax2 = plt.subplots()
+# ax2 = plt.hist([1,1,1,1])
+# st.pyplot(fig2)
