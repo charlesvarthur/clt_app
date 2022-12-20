@@ -10,7 +10,7 @@ st.title('Illustrating Central Limit Theorum with Streamlit')
 st.subheader('An App by Charles Arthur')
 
 st.write(('This app simulates a thousand coin flips using the chance of heads input below,'
-'and then with replacement from that population and plots the historgram of the ' 
+'and then samples with replacement from that population and plots the historgram of the ' 
 'mean of the samples, in order to illustratge the Central Limit Theorem!'))
 
 #Allows user input to set the probability of each value
