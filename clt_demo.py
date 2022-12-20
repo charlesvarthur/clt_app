@@ -6,8 +6,11 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 
+#Allows user input to set the probability of each value
+perc_heads = st.number_input(label= ' Chance of a Coin Landing on Heads', min_value = 0.0, max_value = 1.0, value = .5)
+
 #Create variable assigning the values of binomial distribution
-binom_dist = np.random.binomial(1, .5, 1000)
+binom_dist = np.random.binomial(1, perc_heads, 1000)
 list_of_means = []
 
 #Loop through the coin toss 1000 times and store the mean in the list_of_means variable
